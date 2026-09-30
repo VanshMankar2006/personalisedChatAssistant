@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puja's Bakery Assistant</title>
+    <link rel="stylesheet"  href="style.css">
+  
+</head>
+<body>
+    <script src="script.js"></script>
+    <div class="app-container">
+        <!-- Bakery Header -->
+        <header class="chat-header">
+            <div class="brand-info">
+                <div class="avatar-container">
+                    <!-- Elegant Cake Icon -->
+                    <svg class="avatar-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M20 21v-8a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8"></path>
+                        <path d="M4 16s.5-1 2-1 2.5 2 4 2 2.5-2 4-2 2.5 2 4 2 2-1 2-1"></path>
+                        <path d="M2 21h20"></path>
+                        <path d="M7 8v2"></path>
+                        <path d="M12 8v2"></path>
+                        <path d="M17 8v2"></path>
+                        <circle cx="7" cy="4" r="1" fill="currentColor"></circle>
+                        <circle cx="12" cy="4" r="1" fill="currentColor"></circle>
+                        <circle cx="17" cy="4" r="1" fill="currentColor"></circle>
+                    </svg>
+                    <span class="online-dot"></span>
+                </div>
+                <div class="brand-text">
+                    <h1 style="color: #F59E0B"><b>Puja's Bakery</b></h1>
+                    <p>Your Bakery Assistant</p>
+                </div>
+            </div>
+            <div class="status-badge">Artisan AI</div>
+        </header>
+
+        <!-- Message Feed Area -->
+        <main class="chat-feed" id="chatFeed">
+            <div class="message-row bot-row">
+                <div class="bubble bot-bubble">
+                    Welcome to <strong>Puja's Bakery !</strong><br> How can I help you today?
+                </div>
+                <span class="meta-time" id="initTime">Just now</span>
+            </div>
+        </main>
+
+        <!-- Quick Action Suggestion Chips -->
+        <div class="suggestions-bar">
+            <button class="chip-btn" data-query="🎂 Custom Birthday Cake">🎂 Custom Birthday Cake</button>
+            <button class="chip-btn" data-query="📜 Flavors & Pricing">📜 Flavors & Pricing</button>
+            <button class="chip-btn" data-query="🚚 Delivery & Orders">🚚 Delivery & Orders</button>
+            <button class="chip-btn" data-query="✨ Eggless Options">✨ Eggless Options</button>
+        </div>
+
+        <!-- Input Area Footer -->
+        <footer class="input-footer">
+            <form class="input-form" id="chatForm" autocomplete="off">
+                <input 
+                    type="text" 
+                    id="userInput" 
+                    class="chat-input" 
+                    placeholder="Type your message here..." 
+                    required 
+                />
+                <button type="submit" id="sendBtn" class="send-btn" aria-label="Send Message">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="22" y1="2" x2="11" y2="13"></line>
+                        <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                    </svg>
+                </button>
+            </form>
+            <div class="footer-tag">Powered by Puja's Bakery AI</div>
+        </footer>
+    </div>
+</body>
+</html>
